@@ -1,0 +1,37 @@
+{
+    "name": "convertiv/composer-wp-plugin-verify",
+    "description": "Verifies installed wp plugins according to the directy path given in composer",
+    "type": "composer-plugin",
+    "keywords": [
+      "composer-plugin",
+      "installer"
+    ],
+    "homepage": "https://github.com/convertiv/composer-wp-plugin-verify",
+    "license": "GPL-2.0+",
+    "authors": [
+      {
+        "name": "Brad Mering",
+        "email": "brad@convertiv.com",
+        "homepage": "http://convertiv.com"
+      }
+    ],
+    "support": {
+      "issues": "https://github.com/convertiv/composer-wp-plugin-verify/issues"
+    },
+    "require": {
+        "composer-plugin-api":  "^1.0 || ^2.0",
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.0 || ^2.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Convertiv\\Composer\\WPVerify\\": "src/"
+      }
+    },
+    "extra": {
+      "class": "Convertiv\\Composer\\WPVerify\\Plugin"
+    }
+  }
+  
